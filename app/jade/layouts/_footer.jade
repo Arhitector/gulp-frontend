@@ -1,0 +1,11 @@
+footer#footer
+if locals.isDev
+	//-Development
+	script(src="/js/lib/requirejs/require.js", data-main="/js/config.js")
+else
+	//-Production
+	script(src="/js/lib/requirejs/require.js")
+	script(src="/js/main.min.js")
+
+
+
